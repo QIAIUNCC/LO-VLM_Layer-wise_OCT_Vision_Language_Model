@@ -75,13 +75,7 @@ model = BlipForConditionalGeneration.from_pretrained("QIAIUNCC/LO-VLM").to("cuda
 ## 📑 Results
 
 **[QIAIUNCC/LO-VLM-and-EYELlama-Results](https://huggingface.co/QIAIUNCC/LO-VLM-and-EYELlama-Results)**  
-→ Contains evaluation results (losses, generated captions, JSONs).
-
-```python
-from huggingface_hub import hf_hub_download
-results_file = hf_hub_download("QIAIUNCC/LO-VLM-and-EYELlama-Results", "val_results_step_5000.json")
-```
-
+→ Contains LO-VLM generated captions and EYE-Llama's enhanced interpretations. 
 
 ---
 
