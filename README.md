@@ -1,4 +1,3 @@
-
 ## Paper Context
 
 This repository reproduces experiments from **Compact Vision–Language Models Enable Efficient and Interpretable Automated OCT Analysis Through Layer-Specific Multimodal Learning**  
@@ -37,8 +36,52 @@ Each entry should contain:
 ```
 
 ---
-Data:
-[`QIAIUNCC/OCT-Text-Dataset`](https://huggingface.co/datasets/QIAIUNCC/OCT-Text-Dataset)  
+# 🔗 Hugging Face Resources
+
+All datasets, trained models, and results used in this project are hosted on [Hugging Face](https://huggingface.co/QIAIUNCC).
+
+---
+
+## 📊 Dataset
+
+**[QIAIUNCC/OCT-summary-Dataset](https://huggingface.co/datasets/QIAIUNCC/OCT-summary-Dataset)**  
+Contains OCT images paired with structured textual descriptions.
+
+```python
+from datasets import load_dataset
+dataset = load_dataset("QIAIUNCC/OCT-summary-Dataset", split="train")
+print(dataset[0])
+```
+
+---
+
+## 🤖 Models
+
+**[QIAIUNCC/LO-VLM](https://huggingface.co/QIAIUNCC/LO-VLM)**  
+→ Full compact OCT vision–language model.
+
+**[QIAIUNCC/LO-VLM-trained-encoders](https://huggingface.co/QIAIUNCC/LO-VLM-trained-encoders)**  
+→ Standalone trained encoders for transfer learning.
+
+```python
+from transformers import AutoProcessor, BlipForConditionalGeneration
+
+processor = AutoProcessor.from_pretrained("QIAIUNCC/LO-VLM")
+model = BlipForConditionalGeneration.from_pretrained("QIAIUNCC/LO-VLM").to("cuda")
+```
+
+---
+
+## 📑 Results
+
+**[QIAIUNCC/LO-VLM-and-EYELlama-Results](https://huggingface.co/QIAIUNCC/LO-VLM-and-EYELlama-Results)**  
+→ Contains evaluation results (losses, generated captions, JSONs).
+
+```python
+from huggingface_hub import hf_hub_download
+results_file = hf_hub_download("QIAIUNCC/LO-VLM-and-EYELlama-Results", "val_results_step_5000.json")
+```
+
 
 ---
 
