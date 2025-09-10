@@ -58,10 +58,10 @@ print(dataset[0])
 ## 🤖 Models
 
 **[QIAIUNCC/LO-VLM](https://huggingface.co/QIAIUNCC/LO-VLM)**  
-→ Full compact OCT vision–language model.
+→ Full compact LO-VLM.
 
 **[QIAIUNCC/LO-VLM-trained-encoders](https://huggingface.co/QIAIUNCC/LO-VLM-trained-encoders)**  
-→ Standalone trained encoders for transfer learning.
+→ LO-VLM model with trained encoders.
 
 ```python
 from transformers import AutoProcessor, BlipForConditionalGeneration
