@@ -1,7 +1,7 @@
 ## Paper Context
 
 This repository reproduces experiments from  
-[PDF link](https://www.biorxiv.org/content/10.1101/2025.08.07.669187v1.full.pdf)
+[Paper link](https://www.biorxiv.org/content/10.1101/2025.08.07.669187v1.full.pdf)
  
 # OCT-BLIP Captioning
 
