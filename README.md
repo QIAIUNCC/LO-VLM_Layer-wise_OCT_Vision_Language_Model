@@ -1,7 +1,7 @@
 ## Paper Context
 
-This repository reproduces experiments from **Compact Vision–Language Models Enable Efficient and Interpretable Automated OCT Analysis Through Layer-Specific Multimodal Learning**  
-([PDF link](https://www.biorxiv.org/content/10.1101/2025.08.07.669187v1.full.pdf))
+This repository reproduces experiments from  
+[PDF link](https://www.biorxiv.org/content/10.1101/2025.08.07.669187v1.full.pdf)
  
 # OCT-BLIP Captioning
 
