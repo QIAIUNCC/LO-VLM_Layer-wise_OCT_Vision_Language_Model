@@ -149,7 +149,7 @@ If you use this code, please cite:
 ```
 @article{gholami2025lovlm,
   title   = {Compact Vision--Language Models Enable Efficient and Interpretable Automated OCT Analysis Through Layer-Specific Multimodal Learning},
-  author  = {Gholami, Sina and Alam, Minhaj and Lim, Jennifer and et al.},
+  author = {Tania Haghighi and Sina Gholami and Jared Todd Sokol and Aayush Biswas and Jennifer I. Lim and Theodore Leng and Atalie C. Thompson and Hamed Tabkhi and Minhaj Nur Alam},
   journal = {bioRxiv},
   year    = {2025},
   doi     = {10.1101/2025.08.07.669187}
